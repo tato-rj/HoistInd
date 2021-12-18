@@ -23,6 +23,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        \Blade::include('components.alert');
+        \Blade::include('components.fontawesome', 'fa');
     }
 }

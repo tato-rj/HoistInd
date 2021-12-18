@@ -1,0 +1,53 @@
+html {
+	font-size: 90%;
+}
+
+h1, h2, h3, h4, h5, .lead {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+}
+
+p, div, li a, h6, button, .btn {
+	font-family: 'Cabin', sans-serif;
+	letter-spacing: 1px;
+}
+
+.text-primary {
+	color: $brand-primary !important;
+}
+
+.text-secondary {
+	color: $brand-secondary !important;
+}
+
+.navbar {
+	a, .btn {
+		text-transform: uppercase;
+	}
+}
+
+.accent {
+	text-transform: uppercase;
+	font-weight: bold;
+	&:after {
+		content: "";
+		display: block;
+		width: 32px;
+		height: 4px;
+		background: $brand-secondary;
+		margin-top: 14px;
+		margin-bottom: 20px;
+	}
+}
+
+// .highlight-thin {
+// 	font-family: 'Open Sans', sans-serif;
+// 	letter-spacing: 6px;
+// 	font-weight: 400;
+// }
+
+// .highlight-bold {
+// 	font-family: 'Fjalla One', sans-serif;
+// 	letter-spacing: 1.2px;
+// 	/*font-weight: 600;*/
+// }
