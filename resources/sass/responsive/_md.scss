@@ -11,23 +11,61 @@
 // REPEAT FIRST BREAKPOINT IF IT IS TO PERSIST
 
 @include media-breakpoint-down(md) {
-	.home-lead {
-		height: 90vh !important;
-	}
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: white;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 75%;
+        height: 100%;
+    }
 
-	.navbar-nav {
-		background: #10154d;
-		padding-top: 1.5rem !important;
-		padding-bottom: 1.5rem !important;
-	}
+    .navbar-collapse .nav-link {color: black !important;}
 
-	.navbar-nav .nav-item {
-		padding-top: .75rem;
-		padding-bottom: .75rem;
-	}
+    .navbar-collapse.collapsing {
+        right: -75%;
+        transition: height 0s ease;
+    }
 
-	.navbar-nav .nav-item:last-of-type {
-		padding-top: 1.25rem !important;
-		padding-bottom: .75rem;
-	}
+    .navbar-collapse.show {
+        right: 0;
+        transition: right 300ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 500ms ease-in-out;
+    }
+
+    #lead .container {
+        padding-top: 160px !important;
+        padding-bottom: 20px !important;
+    }
+
+    .contact-col {
+        padding-right: 1.2rem !important;
+        padding-left: 1.2rem !important;
+    }
+
+	// .home-lead {
+	// 	height: 90vh !important;
+	// }
+
+	// .navbar-nav {
+	// 	background: #10154d;
+	// 	padding-top: 1.5rem !important;
+	// 	padding-bottom: 1.5rem !important;
+	// }
+
+	// .navbar-nav .nav-item {
+	// 	padding-top: .75rem;
+	// 	padding-bottom: .75rem;
+	// }
+
+	// .navbar-nav .nav-item:last-of-type {
+	// 	padding-top: 1.25rem !important;
+	// 	padding-bottom: .75rem;
+	// }
 }

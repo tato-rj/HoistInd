@@ -1,26 +1,69 @@
-.navbar-parked {
-	@extend .bg-transparent;
-
-	padding-top: 3rem !important;
-	padding-bottom: 3rem !important;
-	transition: .2s;
-}
-
-.navbar-moved {
-	@extend .bg-primary;
-
-	box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
-	padding-top: 1.5rem !important;
-	padding-bottom: 1.5rem !important;
-	transition: 0s !important;
-}
-
-.hamburger-inner {
+.menu-parked .hamburger-inner {
 	background: white !important;
 	&:before {background: white !important;}
 	&:after {background: white !important;}
 }
 
+.menu-moved .hamburger-inner {
+	background: black !important;
+	&:before {background: black !important;}
+	&:after {background: black !important;}
+}
+
 .hamburger:hover {
     opacity: 1 !important;
+}
+
+#menu {transition: .2s;}
+
+.menu-moved {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-bottom: 3px solid #000000;
+}
+
+.menu-parked .nav-link {
+    color: white !important;
+}
+
+.menu-moved .nav-link {
+    color: black !important;
+}
+
+
+.menu-mobile-hidden {
+    right: -100%!important;
+}
+
+.navbar-mobile {
+    transition: .2s;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: white;
+    width: 380px;
+    max-width: 100%;
+}
+
+.navbar-mobile .nav-link {
+    color: black !important;
+}
+
+.navbar-dark a.nav-link {color: white!important;}
+
+.dropdown-item {
+    &:active {
+        color: inherit !important;
+        background-color: inherit !important;
+        border-color: inherit !important;
+    }
+
+    &:focus {
+        color: inherit !important;
+        background-color: inherit !important;
+        border-color: inherit !important;
+    }
 }

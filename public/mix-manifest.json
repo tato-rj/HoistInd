@@ -1,4 +1,25 @@
 {
-    "/js/app.js": "/js/app.js?id=60e97c63f12402703340",
-    "/css/app.css": "/css/app.css?id=822be3e620635026bb83"
+    "/js/app.js": "/js/app.js?id=8df7037f47f8a73add81",
+    "/css/dist.css": "/css/dist.css?id=b612e5b0c37b40fffa5e",
+    "/css/app.css": "/css/app.css?id=dd241f3202546ebaf9f1",
+    "/images/.DS_Store": "/images/.DS_Store?id=ea78de90da141fe2f52a",
+    "/images/contact.jpeg": "/images/contact.jpeg?id=9aa5a4aaede46b3bcccb",
+    "/images/control.jpeg": "/images/control.jpeg?id=28427b91644e5473126a",
+    "/images/engine.jpeg": "/images/engine.jpeg?id=59e6632deb582844e65e",
+    "/images/facade.jpeg": "/images/facade.jpeg?id=b0fae430439fc4daddb0",
+    "/images/facade2.jpeg": "/images/facade2.jpeg?id=b503d5221443daca0e73",
+    "/images/facade3.jpeg": "/images/facade3.jpeg?id=6a6032fb7d73323aa863",
+    "/images/favicon.png": "/images/favicon.png?id=d16757430d34f33f7212",
+    "/images/floorplan.jpeg": "/images/floorplan.jpeg?id=f8687d47e8e951053a60",
+    "/images/gears.png": "/images/gears.png?id=ad390e95baae7f48097e",
+    "/images/logo_black.png": "/images/logo_black.png?id=6b302f989a3ff82a3470",
+    "/images/logo_white.png": "/images/logo_white.png?id=094a82e5bc595f03d721",
+    "/images/machine-inside.jpeg": "/images/machine-inside.jpeg?id=f9438ea05c60a885ac36",
+    "/images/machine-inside2.jpeg": "/images/machine-inside2.jpeg?id=ccc8b74f487419b80775",
+    "/images/pm.png": "/images/pm.png?id=634fad31a7f22b20374c",
+    "/images/riverbuildings.jpeg": "/images/riverbuildings.jpeg?id=0de5b0cb163c7a464e67",
+    "/images/riverbuildings2.jpeg": "/images/riverbuildings2.jpeg?id=2f2935e963a693a2c965",
+    "/images/topsite.jpeg": "/images/topsite.jpeg?id=b7d6426fc3c0952f152f",
+    "/images/worker-pc.png": "/images/worker-pc.png?id=eadc8158e80cb356f531",
+    "/images/worker.png": "/images/worker.png?id=716de899dffac48db293"
 }

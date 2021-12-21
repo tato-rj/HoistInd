@@ -1,15 +1,16 @@
-.btn-pill-left {
-	border-top-left-radius: 50rem !important;
-	border-bottom-left-radius: 50rem !important;
+.btn-lg {
+	padding: 15px 30px;
+	font-weight: 500 !important;
+	font-size: 1.35rem;
+	border-width: 2px;
 }
 
-.btn-pill-right {
-	border-top-right-radius: 50rem !important;
-	border-bottom-right-radius: 50rem !important;
-}
-
-.btn-pill {
-	border-radius: $brand-corners !important;
+.btn-md {
+	font-weight: 500 !important;
+	font-size: 1.35rem;
+	border-width: 2px;
+	padding-right: 42px;
+	padding-left: 42px; 
 }
 
 .btn-primary {
@@ -20,18 +21,18 @@
 
 	&:hover {
 		color: white !important;
-		background-color: lighten($brand-primary, 8%);
-		border-color: lighten($brand-primary, 8%);
+		background-color: $brand-primary;
+		border-color: $brand-primary;
 	}
 
 	&:active {
-		background-color: lighten($brand-primary, 10%) !important;
-		border-color: lighten($brand-primary, 10%) !important;
+		background-color: lighten($brand-primary, 8%) !important;
+		border-color: lighten($brand-primary, 8%) !important;
 	}
 
 	&:focus {
-		background-color: lighten($brand-primary, 10%) !important;
-		border-color: lighten($brand-primary, 10%) !important;
+		background-color: lighten($brand-primary, 8%) !important;
+		border-color: lighten($brand-primary, 8%) !important;
 	}
 
 	&:disabled {
@@ -44,6 +45,7 @@
 	color: $brand-primary !important;
 	background-color: transparent;
 	border-color: $brand-primary;
+	border-radius: $brand-corners !important;
 
 	&:hover {
 		color: white !important;
@@ -74,7 +76,7 @@
 	color: $brand-primary !important;
 	background-color: white;
 	border-color: white;
-	// border-radius: $brand-corners !important;
+	border-radius: $brand-corners !important;
 
 	&:hover {
 		color: lighten($brand-primary, 8%) !important;
@@ -102,7 +104,7 @@
 	color: white !important;
 	background-color: transparent;
 	border-color: white;
-	// border-radius: $brand-corners !important;
+	border-radius: $brand-corners !important;
 
 	&:hover {
 		color: $brand-primary !important;

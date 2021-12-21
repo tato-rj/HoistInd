@@ -30,4 +30,9 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'social' => [
+        'twitter' => 'https://twitter.com/HoistInd',
+        'linkedin' => 'https://www.linkedin.com/company/hoistind',
+    ]
+
 ];

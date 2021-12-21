@@ -1,0 +1,47 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free/css/all.min";
+@import "~animate.css/animate.min";
+
+@import "variables";
+
+@import "brand/fonts";
+@import "brand/buttons";
+@import "brand/backgrounds";
+
+@import "components/navbar";
+@import "components/form";
+
+@import "responsive/sm";
+@import "responsive/md";
+@import "responsive/lg";
+@import "responsive/xl";
+
+button {outline: none!important};
+
+.modal-content {border-radius: 0!important};
+
+.contact-col {
+    padding-right: 6rem;
+    padding-left: 6rem;
+}
+
+a:not(.text-secondary) {color:  inherit}
+a:not(.btn):not(.dropdown-item):not(.nav-link):not(.navbar-brand):not(.text-secondary) {transition: .1s}
+a:not(.text-secondary):hover {color:  inherit}
+a:not(.btn):not(.dropdown-item):not(.nav-link):not(.navbar-brand):not(.text-secondary):hover {opacity: .5}
+
+label > span {
+    color: #ff0000;
+    font-weight: 400;
+    margin-left: 4px;
+}
+
+.container {max-width: 1220px !important;}
+
+footer .logo, .navbar .logo {
+    width: 200px;
+}
+
+footer, footer a, footer a:hover {color: white; font-size: 14px; letter-spacing: .4px}        
+
+

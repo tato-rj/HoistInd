@@ -9,6 +9,48 @@
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+var $topbar = $('#topbar');
+var $menu = $('#menu');
+var $menubtn = $('#menubtn');
+var $logoblack = $('#logoblack');
+var $logowhite = $('#logowhite');
+$(window).scroll(function () {
+  var scrollTop = $(this).scrollTop();
+
+  if (scrollTop > $topbar.outerHeight()) {
+    $menu.addClass('menu-moved');
+    $menu.removeClass('menu-parked');
+    $menubtn.addClass('btn-outline-primary');
+    $menubtn.removeClass('btn-white');
+    $logoblack.show();
+    $logowhite.hide();
+  } else {
+    $menu.addClass('menu-parked');
+    $menu.removeClass('menu-moved');
+    $menubtn.addClass('btn-white');
+    $menubtn.removeClass('btn-outline-primary');
+    $logoblack.hide();
+    $logowhite.show();
+  }
+});
+$('#menu-close, #menu-overlay').click(function () {
+  $('#menu-mobile').addClass('menu-mobile-hidden');
+  $('#menu-overlay').fadeOut('fast');
+});
+$('.navbar-toggler').click(function () {
+  $('#menu-mobile').removeClass('menu-mobile-hidden');
+  $('#menu-overlay').fadeIn('fast');
+}); // SCROLL TO ELEMENT ON CLICK
+
+$('[scrollto]').click(function () {
+  var element = document.querySelector($(this).attr('scrollto')); // scroll to element
+
+  element.scrollIntoView({
+    behavior: 'smooth',
+    top: '10000px'
+  });
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -32502,10 +32544,10 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ }),
 
-/***/ "./resources/sass/app.scss":
-/*!*********************************!*\
-  !*** ./resources/sass/app.scss ***!
-  \*********************************/
+/***/ "./resources/sass/dist.scss":
+/*!**********************************!*\
+  !*** ./resources/sass/dist.scss ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -35269,7 +35311,7 @@ Popper.Defaults = Defaults;
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
-/******/ 			"css/app": 0
+/******/ 			"css/dist": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -35319,8 +35361,8 @@ Popper.Defaults = Defaults;
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/dist"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/dist"], () => (__webpack_require__("./resources/sass/dist.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

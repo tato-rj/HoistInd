@@ -1,29 +1,23 @@
-<footer class="container-fluid">
-    <div class="container my-5">
+<footer class="container-fluid bg-primary">
+    <div class="container py-5">
         <div class="row">
-            <div class="col-lg-8 col-md-6 col-12">
-                <div class="" style="max-width: 600px;">
-                    @include('components.logo', ['theme' => 'dark'])
-                    <h3 class="mt-2 mb-3"><span style="font-weight: 700;">ARCNET</span>INNOVATION</h3>
-                    <p class="text-muted">We are a leading recruitment, contract staffing, and workforce solutions firm throughout the US, specialized in the Greater New York City area. ArcNet recruiters understand your needs, your industry, and your language.</p>
+            <div class="col-lg-6 col-md-6 col-12">
+                <img src="{{asset('images/logo_white.png')}}" class="logo mb-2">
+                <div class="mb-2">Hoist Industries was established to provide consulting and managing services. We also have a division that provides service, repair, parts and conversions for construction elevators.</div>
+                <div class="d-flex">
+                    <a href="{{config('services.social.twitter')}}" target="_blank" class="mr-2">@fa(['fa_type' => 'b', 'icon' => 'twitter', 'size' => 'lg'])</a>
+                    <a href="{{config('services.social.linkedin')}}" target="_blank" class="mr-2">@fa(['fa_type' => 'b', 'icon' => 'linkedin', 'size' => 'lg'])</a>
+                    <a href="mailto:{{config('brand.emails.info')}}">@fa(['icon' => 'envelope', 'size' => 'lg'])</a>
                 </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-6">
-                <h5 class="accent">Company</h5>
-                <a class="text-muted d-block mb-1" href="{{route('about')}}">About us</a>
-                <a class="text-muted d-block mb-1" href="{{route('contact')}}">Contact</a>
-                <a class="text-muted d-block mb-1" href="{{route('contact')}}">Careers</a>
-            </div>
-            <div class="col-lg-2 col-md-3 col-6">
-                <h5 class="accent">Resources</h5>
-                <a class="text-muted d-block mb-1" href="{{route('opportunities')}}">For job seekers</a>
-                <a class="text-muted d-block mb-1" href="{{route('industries')}}">For employers</a>
             </div>
         </div>
     </div>
-    <div class="row border-top py-3">
-        <div class="col-12 text-muted text-center">
-            <small>Copyright © {{now()->year}} {{config('app.name')}}. All rights reserved.</small>
+    <div class="container">
+        <div class="row py-3" style="border-top: 1px solid rgba(255,255,255,0.12)">
+            <div class="col-12 d-flex d-apart flex-wrap">
+                <div>© {{now()->year}} | All rights reserved - {{config('app.name')}}, Inc.</div>
+                <div><a href="" class="">Privacy Policy</a></div>
+            </div>
         </div>
     </div>
 </footer>
