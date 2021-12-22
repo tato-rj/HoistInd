@@ -37,6 +37,32 @@
 
         <script src="{{ mix('js/app.js') }}"></script>
 
+        <script type="text/javascript">
+        $('form').on('submit', function() {
+            $(this).find('button[type="submit"]').prop('disabled', true);
+        });
+
+        $('form[axios]').submit(function(e) {
+            e.preventDefault();
+            let url = $(this).attr('axios');
+            let name = $(this).find('input[name="name"]').val();
+            let email = $(this).find('input[name="email"]').val();
+            let $container = $(this).parent();
+
+            axios.post(url, {name: name, email: email})
+            .then(function(response) {
+                $container.html(response.data);
+            })
+            .catch(function(error) {
+                alert('Sorry, we couldn\'t send out your request at this time.');
+                console.log(error);
+            })
+            .then(function() {
+                //
+            });
+        });
+        </script>
+
         @stack('scripts')
     </body>
 </html>

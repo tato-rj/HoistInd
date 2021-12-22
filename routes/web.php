@@ -41,10 +41,10 @@ Route::get('contact', function() {
 	return view('contact.index');
 })->name('contact');
 
-Route::post('contact', function() {
-	return request()->all();
-})->name('contact');
+Route::post('consultation', 'MailController@consultation')->name('consultation');
 
-Route::post('brochure', function() {
-	return request()->all();
-})->name('brochure');
+Route::post('contact', 'MailController@contact')->name('contact');
+
+Route::get('brochure', 'DownloadsController@brochure')->name('brochure');
+
+Route::post('brochure', 'MailController@brochure')->name('brochure');
