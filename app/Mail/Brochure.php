@@ -31,7 +31,7 @@ class Brochure extends Mailable
     public function build()
     {
         return $this->subject('Hoist Industries - Sales & Rentals Brochure')
-                    ->attach(\Storage::disk('downloads')->path(config('app.brochure')))
+                    ->attach(public_path() . \Storage::disk('downloads')->path(config('app.brochure')))
                     ->markdown('mail.brochure');
     }
 }
