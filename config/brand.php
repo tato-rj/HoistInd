@@ -3,7 +3,7 @@
 return [
 
 	'phone' => '+1 (646) 492-8385',
-	'emails' => ['info' => 'info@hoistind.com'],
+	'emails' => ['info' => 'arthurvillar@gmail.com'],
 	'calendly' => 'https://calendly.com/hoistind/30min',
 	'office' => [
 		'address' => ['street' => '445 Hamilton Ave. Suite 1102', 'city' => 'White Planes, NY 10601'],
