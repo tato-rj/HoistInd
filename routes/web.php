@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('test', function() {
+	dd(\Storage::disk('downloads')->path(config('app.brochure')));
+});
+
 Route::get('', function() {
 	return view('home.index');
 })->name('home');
