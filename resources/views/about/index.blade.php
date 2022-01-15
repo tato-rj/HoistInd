@@ -1,4 +1,4 @@
-@extends('layouts.app', ['name' => 'About us'])
+@extends('layouts.app')
 
 @push('header')
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
