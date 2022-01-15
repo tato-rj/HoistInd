@@ -4,8 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{$name ?? 'Hoist Ind - Elevator, Engineering Consulting'}} | {{config('app.name')}}</title>
+        <title>{{$name ?? 'Hoist Ind - Construction Elevator & Engineering Consulting | Hoist Industries| New York'}}</title>
 
+        <meta name="description" content="{{$description ?? 'Hoist Industries are a consulting, service, and repair company for your Construction Hoist needs in New York.'}}">
         @include('layouts.components.favicon')
         @include('layouts.components.seo')
 

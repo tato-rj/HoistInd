@@ -1,4 +1,7 @@
-@extends('layouts.app', ['name' => 'Hoisting Companies'])
+@extends('layouts.app', [
+	'name' => 'Hoisting Companies | Hoist Industries | New York',
+	'description' => 'Hoist Industries provides Hoist Companies Control system solutions for modernization for older construction hoists. We have qualified personnel to repair construction hoists on site. Call Today.'
+])
 
 @push('header')
 @endpush

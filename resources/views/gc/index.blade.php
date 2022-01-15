@@ -1,4 +1,7 @@
-@extends('layouts.app', ['name' => 'General Contractors'])
+@extends('layouts.app', [
+	'name' => 'Hoist Rental for Construction Contractors | Hoist Industries',
+	'description' => 'Hoist Industries Provides Complete or Partial Hoist Rental Solutions for your Construction Project.'
+])
 
 @push('header')
 @endpush

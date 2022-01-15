@@ -1,4 +1,7 @@
-@extends('layouts.app', ['name' => 'Contact'])
+@extends('layouts.app', [
+	'name' => 'Construction Hoist Rental | Hoist Industries| New York',
+	'description' => 'Construction and Material Hoist Rental in the Tri-state region of New York, New Jersey and Connecticut.'
+])
 
 @push('header')
 @endpush

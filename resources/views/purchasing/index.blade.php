@@ -1,4 +1,7 @@
-@extends('layouts.app', ['name' => 'Hoist and Compenents Purchasing'])
+@extends('layouts.app', [
+	'name' => 'Hoist & Compenents Purchasing | Hoist Industries | Tri-State Area',
+	'description' => 'Hoist Industries provides OEM hoist & components purchasing as well as replacement parts for construction hoists in New York.'
+])
 
 @push('header')
 @endpush

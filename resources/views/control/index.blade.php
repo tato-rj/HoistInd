@@ -1,4 +1,7 @@
-@extends('layouts.app', ['name' => 'Control System Conversion'])
+@extends('layouts.app', [
+	'name' => 'Control System Conversion | Hoist Industries | New York',
+	'description' => 'Complete Plug and Play control system conversions for Construction Hoist in New York, Connecticut, and New Jersey.'
+])
 
 @push('header')
 @endpush
