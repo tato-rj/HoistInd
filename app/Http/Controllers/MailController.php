@@ -7,6 +7,11 @@ use Illuminate\Support\Facades\Storage;
 
 class MailController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('throttle:1');
+    }
+
     public function contact(Request $request)
     {
         \Mail::to(config('brand.emails.info'))->send(new \App\Mail\Admin\Contact($request));
