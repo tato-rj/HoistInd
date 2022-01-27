@@ -48,9 +48,11 @@
             let url = $(this).attr('axios');
             let name = $(this).find('input[name="name"]').val();
             let email = $(this).find('input[name="email"]').val();
+            let time = $(this).find('input[name="time"]').val();
+            let my_name = $(this).find('input[name="my_name"]').val();
             let $container = $(this).parent();
 
-            axios.post(url, {name: name, email: email})
+            axios.post(url, {name: name, email: email, time: time, my_name: my_name})
             .then(function(response) {
                 $container.html(response.data);
             })

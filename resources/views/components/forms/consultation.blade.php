@@ -1,5 +1,7 @@
 <form method="POST" class="form-dark" action="{{route('contact')}}">
 	@csrf
+  <input type="hidden" name="time" value="{{now()}}">
+  <input type="hidden" name="my_name">
 	<div class="form-group">
 		<label for="name">Full Name<span>*</span></label>
 		<input type="text" required name="name" class="form-control" id="name">
