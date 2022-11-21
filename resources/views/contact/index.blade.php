@@ -56,13 +56,12 @@
 <script type="text/javascript">
 $(document).ready(function() {
 	setTimeout(function() {
-axios.get('contact-form')
+axios.get('contact-form', {params: {form: 'contact'}})
 	 .then(function(response) {
 	 	$('#contact-form').html(response.data);
 	 	$('#contact-form form').fadeIn('fast');
 	 });
 	}, 500);
-
 });
 </script>
 @endpush

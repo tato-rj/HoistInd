@@ -40,7 +40,7 @@
 		<h4>LOOKING TO UPGRADE AN OLDER CONTROL SYSTEM?</h4>
 		<h6>Download the Hoist Ind ControlSystem Conversion Brochure</h6>
 
-		@include('components.forms.brochure')
+		<div id="contact-form"></div>
 	</div>
 </div>
 @endcomponent
@@ -72,4 +72,15 @@
 @endsection
 
 @push('scripts')
+<script type="text/javascript">
+$(document).ready(function() {
+	setTimeout(function() {
+axios.get('/contact-form', {params: {form: 'brochure'}})
+	 .then(function(response) {
+	 	$('#contact-form').html(response.data);
+	 	$('#contact-form form').fadeIn('fast');
+	 });
+	}, 500);
+});
+</script>
 @endpush

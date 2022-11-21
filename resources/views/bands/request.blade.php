@@ -12,8 +12,8 @@
 				<h2>Request a consultation</h2>
 				<p>We work parallel with you to ensure that our solutions solve problems. One of our project managers will evaluate your firms position and provide a viable solution that fits your business.</p>
 			</div>
-			<div class="col-lg-6">
-				@include('components.forms.consultation')
+			<div class="col-lg-6" id="consultation-form">
+				
 			</div>
 		</div>
 	</div>

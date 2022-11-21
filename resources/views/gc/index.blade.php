@@ -37,7 +37,7 @@
 		<h4>LOOKING FOR CONSTRUCTION HOISTS AND INTERNAL ELEVATOR SALES AND RENALS?</h4>
 		<h6>Download the Hoist Ind Sales & Rentals Brochure</h6>
 
-		@include('components.forms.brochure')
+		<div id="contact-form"></div>
 	</div>
 </div>
 @endcomponent
@@ -79,4 +79,21 @@
 @endsection
 
 @push('scripts')
+<script type="text/javascript">
+$(document).ready(function() {
+	setTimeout(function() {
+axios.get('/contact-form', {params: {form: 'brochure'}})
+	 .then(function(response) {
+	 	$('#contact-form').html(response.data);
+	 	$('#contact-form form').fadeIn('fast');
+	 });
+axios.get('/contact-form', {params: {form: 'consultation'}})
+	 .then(function(response) {
+	 	$('#consultation-form').html(response.data);
+	 	$('#consultation-form form').fadeIn('fast');
+	 });
+
+	}, 500);
+});
+</script>
 @endpush
