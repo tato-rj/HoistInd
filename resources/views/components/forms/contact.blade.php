@@ -1,4 +1,4 @@
-<form method="POST" class="form-dark" action="{{route('contact')}}">
+<form method="POST" class="form-dark" action="{{route('contact')}}" style="display: none;">
   @csrf
   <input type="hidden" name="time" value="{{now()}}">
   <input type="hidden" name="my_name">

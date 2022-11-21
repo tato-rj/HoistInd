@@ -45,6 +45,10 @@ Route::get('contact', function() {
 	return view('contact.index');
 })->name('contact');
 
+Route::get('contact-form', function() {
+	return view('components.forms.contact')->render();
+});
+
 Route::post('consultation', 'MailController@consultation')->name('consultation');
 
 Route::post('contact', 'MailController@contact')->name('contact');

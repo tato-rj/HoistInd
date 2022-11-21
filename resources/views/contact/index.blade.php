@@ -16,8 +16,8 @@
 @endcomponent
 
 <section class="container-fluid">
-	<div class="row align-items-center">
-		<div class="col-lg-6 col-md-6 col-12 py-6 contact-col">
+	<div class="row align-items-center bg-primary">
+		<div class="col-lg-6 col-md-6 col-12 py-6 contact-col bg-white h-100">
 			<h2>How can we help?</h2>
 			<div class="mb-5">
 				<h5>Office: <a style="font-weight: 500;" href="tel:{{config('brand.phone')}}">{{config('brand.phone')}}</a></h5>
@@ -33,9 +33,14 @@
 				<h5 style="font-weight: 500">You can <a href="{{config('brand.calendly')}}" target="_blank" class="text-secondary">schedule a free consultation</a> to speak with one of our business managers to see if Hoist Ind is the right fit for your business.</h5>
 			</div>
 			<a href="{{config('brand.calendly')}}" target="_blank" class="btn btn-md btn-outline-primary btn-block">@fa(['icon' =>'plus'])SCHEDULE CONSULTATION</a>
+                <div class="d-flex justify-content-center align-items-center mt-4">
+                    <a href="{{config('services.social.twitter')}}" target="_blank" class="mr-2">@fa(['fa_type' => 'b', 'icon' => 'twitter', 'size' => 'lg'])</a>
+                    <a href="{{config('services.social.linkedin')}}" target="_blank" class="mr-2">@fa(['fa_type' => 'b', 'icon' => 'linkedin', 'size' => 'lg'])</a>
+                    <a href="mailto:{{config('brand.emails.info')}}">@fa(['icon' => 'envelope', 'size' => 'lg'])</a>
+                </div>
 		</div>
-		<div class="col-lg-6 col-md-6 col-12 contact-col bg-primary text-white py-6">
-			@include('components.forms.contact')
+		<div id="contact-form" class="col-lg-6 col-md-6 col-12 contact-col bg-primary text-white py-6">
+			
 		</div>
 	</div>
 </section>
@@ -48,4 +53,16 @@
 @endsection
 
 @push('scripts')
+<script type="text/javascript">
+$(document).ready(function() {
+	setTimeout(function() {
+axios.get('contact-form')
+	 .then(function(response) {
+	 	$('#contact-form').html(response.data);
+	 	$('#contact-form form').fadeIn('fast');
+	 });
+	}, 500);
+
+});
+</script>
 @endpush
